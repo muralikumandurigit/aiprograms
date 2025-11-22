@@ -2,6 +2,7 @@
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+# from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -33,8 +34,11 @@ labels = [
 # -----------------------------------
 
 X_train, X_test, y_train, y_test = train_test_split(
-    emails, labels, test_size=0.2, random_state=42
+    emails, labels, test_size=max(0.3, len(set(labels)) / len(emails)),
+    random_state=42,
+    stratify=labels
 )
+
 
 # -----------------------------------
 # Production pipeline: TF-IDF + Logistic Regression
@@ -59,6 +63,15 @@ print(classification_report(y_test, preds))
 # -----------------------------------
 # Save model + vectorizer in production-friendly format
 # -----------------------------------
+
+print (emails)
+print (labels)
+print("X_train:", X_train)
+print("X_test:", X_test)
+print("y_train:", y_train)
+print("y_test:", y_test)
+print("preds:", preds)
+
 
 joblib.dump(pipeline, "model/intent_model.pkl")
 
