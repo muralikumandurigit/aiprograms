@@ -2,7 +2,7 @@
 import joblib
 
 # Load model
-model = joblib.load("model/intent_model.pkl")
+model = joblib.load("model/intent_LogisticRegression_model.pkl")
 
 def classify_email(text: str):
     """

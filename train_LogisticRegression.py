@@ -72,6 +72,6 @@ print("y_test:", y_test)
 print("preds:", preds)
 
 
-joblib.dump(pipeline, "model/intent_model.pkl")
+joblib.dump(pipeline, "model/intent_LogisticRegression_model.pkl")
 
 print("Model training completed. Saved to model/intent_model.pkl")
