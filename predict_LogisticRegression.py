@@ -1,4 +1,4 @@
-# predict.py
+# predict_LogisticRegression.py
 import joblib
 
 # Load model
