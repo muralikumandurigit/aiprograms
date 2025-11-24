@@ -1,0 +1,5 @@
+text,intent
+"""i want to buy a product""",sales
+"""my order is delayed""",support
+"""need refund""",support
+"""show me offers""",sales
