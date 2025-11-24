@@ -1,0 +1,8 @@
+[
+  {"text": "my internet is not working", "label": "technical"},
+  {"text": "wifi speed is very slow", "label": "technical"},
+  {"text": "i want to upgrade my plan", "label": "upgrade"},
+  {"text": "please change my data plan", "label": "upgrade"},
+  {"text": "my bill amount is incorrect", "label": "billing"},
+  {"text": "i want to download my bill", "label": "billing"}
+]
