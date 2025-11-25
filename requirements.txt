@@ -4,5 +4,5 @@ pandas
 pandas-stubs
 accelerate
 transformers[torch]
-huggingface_hub[hf_xet]
-datasets
+huggingface_hub
+datasets>=2.14.0,<3.0.0

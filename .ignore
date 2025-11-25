@@ -1,4 +1,5 @@
-model_bert
-bert_model
-model
-venv
+model_bert/
+bert_model/
+model/
+distilbert_model/
+venv/
