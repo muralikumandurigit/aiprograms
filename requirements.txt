@@ -6,3 +6,10 @@ accelerate
 transformers[torch]
 huggingface_hub
 datasets>=2.14.0,<3.0.0
+langchain
+langchain-community
+langchain-core
+chromadb[server]
+sentence-transformers
+langchain-huggingface
+langchain-chroma
